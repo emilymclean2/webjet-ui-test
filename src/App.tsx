@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AppWrapper } from "./components/AppWrapper";
 import { HeaderBar } from "./components/HeaderBar";
+import { MainContent } from "./components/MainContent";
 import { AppContext } from "./context";
 import { allHotels } from "./data";
 import { sortHotelsByPrice } from "./helpers/filterAndSortHotels";
@@ -11,7 +12,7 @@ function App() {
 		<AppContext.Provider value={{ hotels: hotels, setHotels: setHotels }}>
 			<AppWrapper>
 				<HeaderBar />
-				<div></div>
+				<MainContent />
 			</AppWrapper>
 		</AppContext.Provider>
 	);

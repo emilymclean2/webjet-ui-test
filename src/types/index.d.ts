@@ -5,3 +5,5 @@ interface Hotel {
 	price: number;
 	image: string;
 }
+
+type QualityFilter = "All" | 5 | 4 | 3 | 2 | 1 | "Unrated";
